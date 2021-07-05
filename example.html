@@ -1,0 +1,90 @@
+<head>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      background-image: linear-gradient(to right,rgb(69, 69, 179),rgb(59, 59, 61));
+    }
+    .slideshow{
+      width: 100%;
+      height: 100vh;
+      position: relative;
+      overflow: hidden;
+    }
+    .slideshow-item{
+      width: inherit;
+      height: inherit;
+      position: absolute;
+      opacity:0;
+      animation: cycleimages 21s infinite;
+    }
+    .slideshow-item:nth-child(1){
+      animation-delay: 0s;
+    }
+    .slideshow-item:nth-child(2){
+      animation-delay: 10s;
+    }
+    .slideshow-item img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+    }
+    .slideshow-item-text{
+      max-width: 50%;
+      position: absolute;
+      top: 10%;
+      left: 0;
+
+      background-color: rgba(0, 0, 0, .8);
+      color: white;
+      padding: 10rem 5rem;
+    }
+    .slideshow-item-text h5{
+      font-size: 5rem;
+      font-family: sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 2.5rem;
+    }
+    .slideshow-item-text p{
+      font-size: 1.6rem;
+      font-family: sans-serif;
+      letter-spacing: 1px;
+      margin-bottom: 2.5rem;
+    }
+    @keyframes cycleimages {
+      25%{
+        opacity: 1;
+      }
+      40%{
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="slideshow">
+  <div class="slideshow-item">
+    <img src="1.jpg">
+    <div class="slideshow-item-text">
+      <h5>Hotels</h5>
+      <p>jhkjdjkasnkndknjauiwhjdankjnhsuiuia
+        djknjansndaiwudjjkasnkjdhabsddanhuaikjn
+        dwknkjnjknjaksndjkjabjdsjkansnd,namdui</p>
+    </div>
+  </div>
+  <div class="slideshow-item">
+    <img src="2.jpg">
+    <div class="slideshow-item-text">
+      <h5>Tours</h5>
+      <p>jhkjdjkasnkndknjauiwhjdankjnhsuiui
+        adjknjansndaiwudjjkasnkjdhabsddanhuaikjn
+        dwknkjnjknjaksndjkjabjdsjkansnd,namdui</p>
+    </div>
+  </div>
+</div>
+</body>
